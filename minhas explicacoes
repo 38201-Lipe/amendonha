@@ -1,0 +1,35 @@
+FurColor.java
+
+Neste arquivo implementei o enum FurColor seguindo o modelo de 
+TrainingLevel.java. Criei sete constantes para representar as cores de 
+pelagem dos gatos, cada uma com um código numérico e um nome 
+de exibição. Também adicionei os métodos getCode() e 
+getDisplayName() para acessar os atributos e o método fromCode(int code) 
+para retornar a cor correspondente ao código informado, lançando 
+uma exceção caso o código não exista. A principal decisão foi utilizar 
+campos final para garantir que os valores do enum sejam imutáveis.
+
+Cat.java
+
+Nesta classe implementei a modelagem de um gato
+utilizando herança a partir da classe Animal, seguindo o 
+padrão utilizado em Dog.java. Adicionei os atributos
+ específicos do gato, como número de vidas, cor da pelagem, 
+se vive dentro de casa, comida favorita, frequência de ronronar 
+e se é castrado. No construtor, a lógica define automaticamente 
+o habitat e o valor de isWild com base no parâmetro isIndoor. 
+Também sobrescrevi os métodos makeSound(), sleep() e displayInfo(),
+além de criar os métodos purr(), loseLife() e duas versões do método 
+move() para demonstrar sobrecarga. A implementação foi testada criando 
+objetos da classe Cat e executando todos os métodos para verificar se as 
+informações e comportamentos eram exibidos corretamente.
+
+Como testei
+
+Para validar a implementação, criei objetos da classe Cat com 
+diferentes valores e executei todos os métodos desenvolvidos. 
+Também testei o método fromCode() do enum FurColor utilizando 
+códigos válidos e inválidos para confirmar que o retorno e o tratamento 
+de erros funcionavam corretamente. Dessa forma, foi possível verificar 
+que a herança, os métodos sobrescritos, a sobrecarga e a enumeração 
+estavam funcionando conforme esperado.
